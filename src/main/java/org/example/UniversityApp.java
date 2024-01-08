@@ -164,14 +164,19 @@ public class UniversityApp {
                     Integer facultyId = scInt.nextInt();
                     System.out.println("Enter the new group name : ");
                     String groupName = scStr.nextLine();
-                    Group group = new Group(groupName, facultyId);
+                    Group group = new Group(groupName,facultyId);
                     facultyGroupService.addFacultyGroup(group);
                 }
                 case "7" -> {
+                    System.out.println("Enter the faculty id : ");
+                    Integer facultyId = scInt.nextInt();
+                    facultyGroupService.showAllFacultyGroups(facultyId);
+                    System.out.println("Enter the group id : ");
+                    Integer groupId = scInt.nextInt();
                     System.out.println("Enter the new subject name : ");
                     String groupName = scStr.nextLine();
                     Subject subject = new Subject(groupName);
-                    subjectService.addSubject(subject);
+                    groupSubjectService.addGroupSubject(groupId, subject.getId());
                 }
                 default -> System.out.println("Unknown command!");
             }
@@ -193,7 +198,7 @@ public class UniversityApp {
                 4. Delete faculty
                 5. Show faculty group
                 6. Add group faculty 
-                7. Add subject 
+                7. Add subject group
                 0. Exit   
                 """);
     }

@@ -9,7 +9,9 @@ import java.util.Map;
 public interface GroupSubjectService {
 
     Map<Integer,Integer> GROUP_SUBJECT_MAP = Collections.synchronizedMap(new LinkedHashMap<>());
-    //  groupId subjectsId
+    //  groupId subjectId
 
     void showAllSubjectsStudent(Student student);
+
+    void addGroupSubject(Integer groupId, Integer subjectId);
 }
