@@ -8,15 +8,15 @@ import java.util.List;
 
 public interface RectorService {
 
-    List<Student> RECTOR_STUDENT_LIST = Collections.synchronizedList(new LinkedList<>());
+    List<Student> GUEST_LIST = Collections.synchronizedList(new LinkedList<>());
     // Oqishka kirmoqchi bogan stundetlani royxati
 
     void acceptStudentsRequest(Student student, Integer groupId);
 
-    void addStudent(Student student);
+    void addGuestToList(Student student);
     // royhatga qoshish
 
-    void showAllRectorStudents();
+    void showAllRectorGuests();
 
-    Student getRectorStudentById(Integer id);
+    Student getRectorGuestsById(Integer id);
 }

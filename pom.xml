@@ -26,6 +26,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.12</version> <!-- So'nggi versiya raqami -->
+        </dependency>
     </dependencies>
 
     <build>

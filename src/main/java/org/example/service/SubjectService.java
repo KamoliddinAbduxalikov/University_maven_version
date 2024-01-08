@@ -11,4 +11,6 @@ public interface SubjectService {
     List<Subject> SUBJECT_LIST = Collections.synchronizedList(new LinkedList<>());
 
     Subject getSubjectById(Integer id);
+
+    void addSubject(Subject subject);
 }

@@ -12,13 +12,12 @@ import java.util.Map;
 public class GroupSubjectServiceImpl implements GroupSubjectService {
 
     {
-        GROUP_SUBJECT_MAP.put(new Group("G34",1).getId(),new Subject("Fizika").getId());
-        GROUP_SUBJECT_MAP.put(new Group("G36",2).getId(),new Subject("Kimyo").getId());
-        GROUP_SUBJECT_MAP.put(new Group("F56",1).getId(),new Subject("Fizra").getId());
-        GROUP_SUBJECT_MAP.put(new Group("F91",3).getId(),new Subject("Algebra").getId());
-        GROUP_SUBJECT_MAP.put(new Group("G12",2).getId(),new Subject("Tarix").getId());
-        GROUP_SUBJECT_MAP.put(new Group("G89",3).getId(),new Subject("Ona-tili").getId());
-        GROUP_SUBJECT_MAP.put(new Group("G334",1).getId(),new Subject("Geometriya").getId());
+        GROUP_SUBJECT_MAP.put(1,1);
+        GROUP_SUBJECT_MAP.put(2,2);
+        GROUP_SUBJECT_MAP.put(3,3);
+        GROUP_SUBJECT_MAP.put(4,4);
+        GROUP_SUBJECT_MAP.put(5,5);
+        GROUP_SUBJECT_MAP.put(6,6);
     }
 
     @Override

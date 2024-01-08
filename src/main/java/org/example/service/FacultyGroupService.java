@@ -12,4 +12,5 @@ public interface FacultyGroupService {
 
     void showAllFacultyGroups(Integer facultyId);
 
+    void addFacultyGroup(Group group);
 }

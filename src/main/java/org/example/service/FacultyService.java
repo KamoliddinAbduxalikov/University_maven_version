@@ -14,4 +14,6 @@ public interface FacultyService {
     Faculty getFacultyById(Integer id);
 
     void deleteFaculty(Integer facultyId);
+
+    void addFaculty(Faculty faculty);
 }

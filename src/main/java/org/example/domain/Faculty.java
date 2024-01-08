@@ -15,4 +15,8 @@ public class Faculty {
 
     private Integer id = sequence;
     private String name;
+
+    public Faculty(String name) {
+        this.name = name;
+    }
 }

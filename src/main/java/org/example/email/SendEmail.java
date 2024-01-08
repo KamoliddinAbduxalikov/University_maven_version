@@ -7,7 +7,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import java.util.Properties;
 
-public class Email {
+public class SendEmail {
 
     public static void sendEmail(String toEmail, Integer msg) throws Exception {
         Properties properties = new Properties();
@@ -32,7 +32,7 @@ public class Email {
         message.setSubject("Mail Subject");
 
         MimeBodyPart mimeBodyPart = new MimeBodyPart();
-        mimeBodyPart.setContent(msg, "text/html; charset=utf-8");
+        mimeBodyPart.setContent(msg.toString(), "text/html; charset=utf-8");
 
         Multipart multipart = new MimeMultipart();
         multipart.addBodyPart(mimeBodyPart);

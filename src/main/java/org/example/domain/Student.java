@@ -13,14 +13,6 @@ public class Student {
         sequence++;
     }
 
-    public Student(String name, Integer age, String studentPhoneNumber, String password, Integer facultyId) {
-        this.name = name;
-        this.age = age;
-        this.studentPhoneNumber = studentPhoneNumber;
-        this.password = password;
-        this.facultyId = facultyId;
-    }
-
     private String name;
     private Integer age;
     private String studentPhoneNumber;
@@ -29,4 +21,14 @@ public class Student {
     private String password;
     private Integer facultyId;
     private UserType userType = UserType.GUEST;
+    private String email;
+
+    public Student(String name, Integer age, String studentPhoneNumber, String password, Integer facultyId, String email) {
+        this.name = name;
+        this.age = age;
+        this.studentPhoneNumber = studentPhoneNumber;
+        this.password = password;
+        this.facultyId = facultyId;
+        this.email = email;
+    }
 }

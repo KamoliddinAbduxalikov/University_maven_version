@@ -8,4 +8,9 @@ import java.util.List;
 
 public interface StudentService {
 
+    List<Student> STUDENT_LIST = Collections.synchronizedList(new LinkedList<>());
+
+    Student login(String name, String password);
+
+    void addStudent(Student student);
 }
