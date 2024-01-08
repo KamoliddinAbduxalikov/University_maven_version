@@ -29,4 +29,9 @@ public class GroupSubjectServiceImpl implements GroupSubjectService {
             }
         }
     }
+
+    @Override
+    public void addGroupSubject(Integer groupId, Integer subjectId) {
+        GROUP_SUBJECT_MAP.put(groupId,subjectId);
+    }
 }
