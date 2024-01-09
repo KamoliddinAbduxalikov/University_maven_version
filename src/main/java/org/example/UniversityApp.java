@@ -1,8 +1,6 @@
 package org.example;
 
 import org.example.domain.*;
-import org.example.email.SendEmail;
-import org.example.enums.UserType;
 import org.example.service.*;
 import org.example.service.impl.*;
 
@@ -94,7 +92,7 @@ public class UniversityApp {
 
         Random random = new Random();
         Integer msg = 10000 + random.nextInt(90000);
-        SendEmail.sendEmail(email, msg);
+        emailService.sendEmail(email, msg);
 
         boolean process = true;
         do {
