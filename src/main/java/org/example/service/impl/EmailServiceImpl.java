@@ -48,5 +48,6 @@ public class EmailServiceImpl implements EmailService {
         message.setContent(multipart);
 
         Transport.send(message);
+        // nega
     }
 }
