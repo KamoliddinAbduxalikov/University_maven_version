@@ -20,7 +20,6 @@ public class UniversityApp {
     static RectorService rectorService = new RectorServiceImpl();
     static EmailService emailService = new EmailServiceImpl();
     static GroupSubjectService groupSubjectService = new GroupSubjectServiceImpl();
-    static Boolean inProcess = true;
 
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to University!");

@@ -16,12 +16,7 @@ public class SubjectServiceImpl implements SubjectService {
 
     @Override
     public Subject getSubjectById(Integer id) {
-        for (Subject subject : SUBJECT_LIST) {
-            if(subject.getId().equals(id)){
-                return subject;
-            }
-        }
-        return null;
+         return SUBJECT_LIST.stream().filter(subject -> subject.getId().equals(id)).findFirst().get();
     }
 
     @Override

@@ -30,19 +30,11 @@ public class RectorServiceImpl implements RectorService {
 
     @Override
     public void showAllRectorGuests() {
-        for (Student student : GUEST_LIST) {
-            System.out.println(student);
-        }
+        GUEST_LIST.forEach(System.out::println);
     }
 
     @Override
     public Student getRectorGuestsById(Integer id) {
-        for (Student student : GUEST_LIST) {
-            if (student.getId().equals(id)){
-                return student;
-            }
-        }
-        log.error("Guest not found!");
-        return null;
+        return GUEST_LIST.stream().filter(student -> student.getId().equals(id)).findFirst().get();
     }
 }

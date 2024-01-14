@@ -9,13 +9,9 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Student login(String name, String password) {
-        for (Student student : STUDENT_LIST) {
-            if (student.getName().equals(name) && student.getPassword().equals(password)) {
-                return student;
-            }
-        }
-        log.error("Student not found!");
-        return null;
+        return STUDENT_LIST.stream().
+                filter(student -> student.getName().equals(name) &&
+                        student.getPassword().equals(password)).findFirst().get();
     }
 
     @Override
